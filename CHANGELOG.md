@@ -1,6 +1,6 @@
 # CHANGELOG
 
-**v0.19.1** adds a PicoNES PCB design with SNES controller ports. The emulator is unchanged from v0.19.
+**v0.19.2** finds USB controllers at every start on the Adafruit Fruit Jam and other boards with PIO-USB.
 
 
 # General Info
@@ -27,6 +27,12 @@ Only RP2350 (pico 2 based boards) supported. Works best with [Adafruit Fruit Jam
 > **Note:** This limitation does **not** apply to **HSTX-based boards** (e.g., *Adafruit Fruit Jam*), where the monitor refresh rate can be set to **60 Hz**.
 >
 > Games also **run slower** on PicoDVI boards. See [Speed on PicoDVI boards](https://github.com/PicoPlus-devel/pico-genesisPlus/blob/main/README.md#speed-on-picodvi-boards).
+
+# v0.19.2 Release notes
+
+## Fixes
+
+- **USB controllers on the Adafruit Fruit Jam and other boards with PIO-USB are now found at every start.** On boards with an older RP2350 chip they were often not detected.
 
 # v0.19.1 Release notes
 
