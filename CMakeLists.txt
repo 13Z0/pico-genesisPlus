@@ -187,11 +187,6 @@ target_compile_definitions(${projectname} PUBLIC
     GPIOHSTXINVERTED=${GPIOHSTXINVERTED} # Set to 1 if HSTX pins are inverted: D- = D+ -1
     ENABLE_VU_METER=${ENABLE_VU_METER} # Enable VU meter (fruitjam NeoPixel leds)
     ENABLEDVI=1
-    # Route clk_hstx from PLL_USB at 378 MHz overclock so PLL_SYS jitter no longer
-    # closes the TMDS eye-pattern (dots/dotted lines on strict HDMI receivers).
-    # FrensHelpers::setClocksAndStartStdio only honors this when PIO-USB is in use
-    # (PLL_USB must stay at 48 MHz for native TinyUSB).
-    GENESIS_OVERCLOCK_HSTX_FIX=1
     PICO_FLASH_SIZE_BYTES=16777216  # Real size determined at runtime.
 )
 
